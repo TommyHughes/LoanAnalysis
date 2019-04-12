@@ -31,3 +31,10 @@ loanPurposesPlot <- Desc(loans[,purpose], main = "Loan Purposes", plotit = T)
 print(loanPurposesPlot)
 
   # Debt consolidation was the most popular reason for taking out a loan.
+
+  # Create density plot of distribution of annual_inc
+annualIncomeDistribution <- Desc(loans[annual_inc < 500000,annual_inc], main = "Annual Income", plotit = T)
+
+print(annualIncomeDistribution)
+
+  # The mode is 50000
