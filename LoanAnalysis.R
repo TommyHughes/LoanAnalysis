@@ -5,7 +5,7 @@
 # Version: 1.0
 # Execution: Must be run as a Source to await user input.
 
-
+library(ggplot2)
 library(tidyverse)
 library(data.table)
 library(DescTools)
@@ -33,6 +33,7 @@ loans <- loans[, issue_d := as.Date(stringr::str_replace(loans[, issue_d], "^", 
 
   # We'll factor grade
 loans <- loans[, grade := as.factor(grade)]
+  
   # We create a column which indicates whether a loan is good or bad depending on its status:
   # First we create a vector, badLoans, of bad loan types.
 badLoans <- c("Charged Off", "Default", "Does not meet the credit policy. Status:Charged Off",
