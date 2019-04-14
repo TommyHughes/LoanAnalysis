@@ -3,7 +3,7 @@
 # Author: Thomas Hughes
 # Purpose: Initial examination of loanbook
 # Version: 1.0
-# Execution: Must be run as a Source to await user input.
+# Execution: Must be run as a Source to await user input. Visit kaggle Lending Club Loan Data for .csv file.
 
 library(ggplot2)
 library(tidyverse)
