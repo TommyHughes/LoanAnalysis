@@ -1,3 +1,11 @@
+# Script Name : LoanAnalysis.R
+# Created On: April 14, 2019
+# Author: Thomas Hughes
+# Purpose: Initial examination of loanbook
+# Version: 1.0
+# Execution: Must be run as a Source to await user input.
+
+
 library(tidyverse)
 library(data.table)
 library(DescTools)
